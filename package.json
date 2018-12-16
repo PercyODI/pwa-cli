@@ -2,8 +2,12 @@
   "name": "pwa-cli",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "10.x",
+    "npm": "6.x"
+  },
   "scripts": {
-    "heroku-postbuild": "npm build",
+    "heroku-postbuild": "npm run build",
     "start": "npm run express:run",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
