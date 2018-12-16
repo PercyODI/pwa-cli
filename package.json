@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "heroku.postbuild": "npm build",
+    "heroku-postbuild": "npm build",
     "start": "npm run express:run",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
