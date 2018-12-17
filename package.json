@@ -8,7 +8,7 @@
   },
   "scripts": {
     "heroku-postbuild": "npm run build",
-    "start": "npm run express:run",
+    "start": "node ./srv/index.js",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
@@ -28,12 +28,13 @@
   },
   "devDependencies": {
     "@types/jest": "^23.1.4",
+    "@vue/cli-service": "^3.2.0",
     "@vue/cli-plugin-babel": "^3.2.0",
     "@vue/cli-plugin-eslint": "^3.2.0",
+    "vue-cli-plugin-express": "0.0.4",
     "@vue/cli-plugin-pwa": "^3.2.0",
     "@vue/cli-plugin-typescript": "^3.2.0",
     "@vue/cli-plugin-unit-jest": "^3.2.0",
-    "@vue/cli-service": "^3.2.0",
     "@vue/eslint-config-airbnb": "^4.0.0",
     "@vue/eslint-config-typescript": "^3.2.0",
     "@vue/test-utils": "^1.0.0-beta.20",
@@ -43,7 +44,6 @@
     "eslint-plugin-vue": "^5.0.0-0",
     "ts-jest": "^23.0.0",
     "typescript": "^3.0.0",
-    "vue-cli-plugin-express": "0.0.4",
     "vue-template-compiler": "^2.5.17"
   },
   "eslintConfig": {
