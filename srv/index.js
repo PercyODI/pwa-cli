@@ -6,7 +6,7 @@ const app = express();
 // export default (app) => {
 app.use(express.json());
 if (process.env.NODE_ENV === 'production') {
-  app.use(enforce.HTTPS());
+  app.use(enforce.HTTPS({ trustProtoHeader: true }));
 } else {
   console.log('Not enforcing HTTPS');
 }
