@@ -1,8 +1,14 @@
 <template>
-  <div class="counter">
-    <CounterChanger />
-    <CounterViewer />
-  </div>
+  <b-container>
+        <b-row>
+            <b-col>
+                <CounterChanger />
+            </b-col>
+            <b-col>
+                <CounterViewer />
+            </b-col>
+        </b-row>
+    </b-container>
 </template>
 
 <script lang="ts">

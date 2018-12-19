@@ -1,7 +1,5 @@
 <template>
-  <div class="counterView">
-    I View!
-  </div>
+  <div class="counterView">{{ stateCount }}</div>
 </template>
 
 <script lang="ts">
@@ -9,7 +7,9 @@ import { Component, Prop, Vue } from 'vue-property-decorator';
 
 @Component
 export default class CounterViewer extends Vue {
-
+  get stateCount() {
+    return this.$store.state.count;
+  }
 }
 </script>
 

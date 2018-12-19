@@ -1,7 +1,5 @@
 <template>
-  <div class="home">
-    <CounterComponent/>
-  </div>
+    <CounterComponent />
 </template>
 
 <script lang="ts">

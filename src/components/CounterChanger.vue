@@ -1,6 +1,27 @@
 <template>
   <div class="counterChanger">
-    I Change!
+    <b-container>
+      <b-row>
+        <b-col>
+          <b-button
+            size="lg"
+            variant="primary"
+            class="btn-block"
+            v-on:click="incrementCount()"
+          >++++++</b-button>
+        </b-col>
+      </b-row>
+      <b-row>
+        <b-col>
+          <b-button
+            size="lg"
+            variant="danger"
+            class="btn-block"
+            v-on:click="decrementCount()"
+          >------</b-button>
+        </b-col>
+      </b-row>
+    </b-container>
   </div>
 </template>
 
@@ -9,7 +30,13 @@ import { Component, Prop, Vue } from 'vue-property-decorator';
 
 @Component
 export default class CounterChanger extends Vue {
+  incrementCount() {
+    this.$store.commit('increment');
+  }
 
+  decrementCount() {
+    this.$store.commit('decrement');
+  }
 }
 </script>
 
